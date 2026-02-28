@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChamaLá - Serviços com Segurança em Cuiabá</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #FF4500;
+            --gradient-flame: linear-gradient(135deg, #FFB703 0%, #FF4500 100%);
+            --dark: #121212;
+            --dark-gray: #333333;
+            --light-bg: #F8F9FA;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { color: var(--dark-gray); background-color: var(--white); line-height: 1.6; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* HEADER */
+        header { padding: 20px 0; border-bottom: 1px solid #EEE; background: var(--white); position: sticky; top: 0; z-index: 100; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo-img { height: 60px; /* Ajuste conforme necessário */ }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark-gray); font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary-orange); }
+        
+        /* HERO SECTION */
+        .hero { padding: 80px 0; text-align: center; background-color: var(--light-bg); }
+        .hero h1 { font-size: 3rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; letter-spacing: -1px; }
+        .hero h1 span { background: var(--gradient-flame); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 40px auto; color: #555; }
+        
+        /* BUTTONS */
+        .btn { display: inline-block; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; }
+        .btn-primary { background: var(--primary-orange); color: var(--white); box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 69, 0, 0.4); }
+        .btn-outline { background: transparent; color: var(--primary-orange); border: 2px solid var(--primary-orange); }
+        .btn-outline:hover { background: #FFF5F2; }
+
+        /* SECURITY SECTION */
+        .security { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2.2rem; font-weight: 800; margin-bottom: 50px; color: var(--dark); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { padding: 30px; border-radius: 16px; background: var(--white); border: 1px solid #EEE; transition: border-color 0.3s; }
+        .feature-card:hover { border-color: var(--primary-orange); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; display: inline-block; }
+        .feature-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--dark); }
+
+        /* REGISTRATION SECTION (THE 3 PILLARS) */
+        .join-us { background: var(--dark); color: var(--white); padding: 80px 0; text-align: center; }
+        .join-us .section-title { color: var(--white); }
+        .cards-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 50px; }
+        .join-card { background: #222; padding: 40px 30px; border-radius: 20px; width: 100%; max-width: 350px; text-align: left; border-top: 4px solid var(--primary-orange); }
+        .join-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--white); }
+        .join-card p { color: #BBB; margin-bottom: 25px; font-size: 0.95rem; }
+        .join-card .btn { width: 100%; text-align: center; }
+
+        /* FOOTER */
+        footer { background: var(--light-bg); padding: 40px 0; text-align: center; border-top: 1px solid #EEE; }
+        footer p { color: #777; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; /* Simplificação para mobile */ }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <img src="logo.png" alt="ChamaLá Logo" class="logo-img">
+            <nav class="nav-links">
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#seguranca">Segurança</a>
+                <a href="#cadastro" class="btn btn-outline" style="padding: 10px 24px; margin-left: 20px;">Cadastre-se</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>O fim da dor de cabeça nas suas <span>Obras e Reformas</span></h1>
+            <p>Conectamos você aos melhores prestadores de serviço e lojas de materiais de Cuiabá. Sem enrolação, com garantia e pagamento 100% seguro.</p>
+            <a href="#cadastro" class="btn btn-primary">Começar a Usar</a>
+        </div>
+    </section>
+
+    <section id="seguranca" class="security container">
+        <h2 class="section-title">Confiança de ponta a ponta</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Profissionais Verificados</h3>
+                <p>Todos os prestadores passam por uma rigorosa checagem de documentos (CNPJ/MEI) e antecedentes antes de entrarem na plataforma.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h3>Pagamento Protegido</h3>
+                <p>O seu dinheiro fica retido na nossa conta garantia (Escrow). O prestador só recebe quando você der o "OK" de que o serviço foi concluído.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏗️</div>
+                <h3>Materiais Mais Baratos</h3>
+                <p>Nosso sistema faz um leilão automático com lojas parceiras de Cuiabá. Você recebe os materiais mais baratos direto na sua obra.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="join-us">
+        <div class="container">
+            <h2 class="section-title">Faça parte do ecossistema ChamaLá</h2>
+            <p style="color: #AAA; max-width: 600px; margin: 0 auto;">Escolha o seu perfil abaixo e entenda como nossa plataforma foi desenhada para facilitar a sua vida.</p>
+            
+            <div class="cards-wrapper">
+                
+                <div class="join-card">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">👤</div>
+                    <h3>Sou Cliente</h3>
+                    <p>Cansado de orçamentos surpresa e atrasos? No ChamaLá, você descreve o problema, recebe orçamentos padronizados e acompanha tudo pelo app. Zero risco.</p>
+                    <a href="cliente.html" class="btn btn-primary">Pedir um Serviço</a>
+                </div>
+
+                <div class="join-card">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🛠️</div>
+                    <h3>Sou Prestador</h3>
+                    <p>Aumente sua renda sem se preocupar com calote. Seja você MEI ou autônomo, nós enviamos os clientes, garantimos o recebimento e ajudamos na gestão.</p>
+                    <a href="prestador.html" class="btn btn-outline" style="color: white; border-color: white;">Quero Trabalhar</a>
+                </div>
+
+                <div class="join-card">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🏪</div>
+                    <h3>Sou Lojista</h3>
+                    <p>Torne-se uma loja parceira. Quando uma obra precisar de materiais, enviamos a lista para você dar seu lance. Venda em volume, direto pelo nosso painel.</p>
+                    <a href="loja.html" class="btn btn-outline" style="color: white; border-color: white;">Cadastrar Loja</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="logo.png" alt="ChamaLá" style="height: 40px; filter: grayscale(100%); opacity: 0.5; margin-bottom: 15px;">
+            <p>&copy; 2026 ChamaLá Serviços. Todos os direitos reservados. Feito com orgulho em Cuiabá - MT.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
