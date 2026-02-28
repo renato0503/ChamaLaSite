@@ -46,7 +46,6 @@
         /* ================= HEADER E NAVEGAÇÃO ================= */
         header { padding: 15px 0; background: rgba(255, 255, 255, 0.98); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); }
         .nav-content { display: flex; justify-content: space-between; align-items: center; }
-        /* AUMENTO DA LOGO AQUI */
         .logo-img { height: 85px; transition: transform 0.3s; }
         .logo-img:hover { transform: scale(1.05); }
         
@@ -69,7 +68,7 @@
         .section-header h2 { font-size: 2.8rem; font-weight: 800; color: var(--secondary); margin-bottom: 20px; letter-spacing: -1px; }
         .section-header p { font-size: 1.2rem; color: var(--text-light); line-height: 1.8; }
 
-        /* ================= O FLUXO DE CONTRATAÇÃO (NOVO E DETALHADO) ================= */
+        /* ================= O FLUXO DE CONTRATAÇÃO ================= */
         .flow-section { background: var(--bg-white); }
         .flow-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
         .flow-step { display: flex; align-items: flex-start; gap: 30px; background: var(--bg-light); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color); transition: all 0.3s ease; }
@@ -134,23 +133,22 @@
         .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease; }
         .faq-answer p { color: var(--text-light); padding-bottom: 24px; font-size: 1.05rem; }
 
-        /* ================= CADASTRO (3 PILARES) ================= */
-        .join-ecosystem { background: var(--secondary); color: white; }
+        /* ================= CADASTRO (OS 3 PILARES EM DESTAQUE) ================= */
+        .join-ecosystem { background: var(--secondary); color: white; padding-bottom: 150px; }
         .join-ecosystem .section-header h2 { color: white; }
         .join-ecosystem .section-header p { color: #A1A1AA; }
         .join-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
         .join-card { background: var(--secondary-light); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 50px 40px; text-align: center; transition: all 0.3s ease; display: flex; flex-direction: column; height: 100%; }
-        .join-card:hover { border-color: var(--primary); transform: translateY(-10px); background: #333; }
+        .join-card:hover { border-color: var(--primary); transform: translateY(-10px); background: #333; box-shadow: 0 15px 30px rgba(255, 69, 0, 0.2); }
         .join-icon { width: 80px; height: 80px; background: rgba(255, 69, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
         .join-icon svg { width: 40px; height: 40px; fill: var(--primary); }
         .join-card h3 { font-size: 2rem; margin-bottom: 16px; color: var(--bg-white); }
         .join-card p { color: #A1A1AA; margin-bottom: 40px; flex-grow: 1; font-size: 1.1rem; }
-        .join-card .btn { width: 100%; }
+        .join-card .btn { width: 100%; font-size: 1.2rem; }
 
         /* ================= FOOTER ================= */
         footer { background: #0A0A0A; color: var(--bg-white); padding: 80px 0 30px; border-top: 5px solid var(--primary); }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
-        /* LOGO DO RODAPÉ AUMENTADA */
         .footer-about img { height: 100px; filter: brightness(0) invert(1); opacity: 0.9; margin-bottom: 20px; }
         .footer-about p { color: #A1A1AA; font-size: 1rem; max-width: 450px; line-height: 1.8; }
         .footer-links h4 { font-size: 1.3rem; margin-bottom: 24px; color: var(--bg-white); }
@@ -184,11 +182,11 @@
         <div class="container nav-content">
             <img src="logo.png" alt="ChamaLá Logo" class="logo-img">
             <nav class="nav-links">
-                <a href="#como-funciona">Fluxo de Contratação</a>
-                <a href="#seguranca">A Garantia ChamaLá</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#seguranca">A Garantia Escrow</a>
                 <a href="#profissoes">Serviços Atendidos</a>
-                <a href="#faq">Perguntas Frequentes</a>
-                <a href="#cadastro" class="btn btn-primary" style="padding: 12px 28px;">Criar Conta Grátis</a>
+                <a href="#faq">Dúvidas</a>
+                <a href="#cadastro" class="btn btn-primary" style="padding: 12px 28px;">Acessar a Plataforma</a>
             </nav>
         </div>
     </header>
@@ -199,7 +197,7 @@
             <p>Conectamos você aos profissionais mais qualificados e às lojas com os melhores preços de Cuiabá. Um ecossistema blindado para proteger o seu patrimônio e o seu dinheiro do início ao fim do serviço.</p>
             
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
-                <a href="#cadastro" class="btn btn-primary">
+                <a href="https://chamala-app.web.app/" class="btn btn-primary">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
                     Quero Contratar um Serviço
                 </a>
@@ -225,8 +223,47 @@
             </div>
             
             <p style="margin-top: 30px; font-size: 0.9rem; color: #888;">
-                🎁 Ei! Tem um bebê chegando em casa? Use o código <strong>BEMVINDA</strong> e ganhe 10% OFF no primeiro serviço!
+                🎁 Ei! Tem um bebê chegando em casa? Use o código <strong>BEMVINDA</strong> no app e ganhe 10% OFF no primeiro serviço!
             </p>
+        </div>
+    </section>
+
+    <section id="cadastro" class="section-padding join-ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <h2>Acesse a Plataforma</h2>
+                <p>Selecione o seu perfil abaixo e junte-se à plataforma que está mudando a forma como construímos, reformamos e mantemos nossos lares.</p>
+            </div>
+
+            <div class="join-grid">
+                
+                <div class="join-card">
+                    <div class="join-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h3>Para a sua Casa ou Empresa</h3>
+                    <p>Precisa de um profissional agora? Crie sua conta gratuita, publique seu pedido e deixe que os melhores prestadores da região disputem para atender você com o menor preço.</p>
+                    <a href="https://chamala-app.web.app/" class="btn btn-primary">Acessar App do Cliente</a>
+                </div>
+
+                <div class="join-card" style="border-top: 4px solid var(--primary);">
+                    <div class="join-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                    </div>
+                    <h3>Para o Prestador de Serviços</h3>
+                    <p>Diga adeus ao calote. Tenha uma agenda cheia, receba seus pagamentos garantidos direto na conta bancária após a conclusão e construa uma reputação imbatível na cidade.</p>
+                    <a href="https://chamala-app.web.app/prestador.html" class="btn btn-primary">Cadastrar como Parceiro</a>
+                </div>
+
+                <div class="join-card">
+                    <div class="join-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+                    </div>
+                    <h3>Para Lojas de Materiais</h3>
+                    <p>Transforme sua loja física em um fornecedor digital de alto volume. Receba listas de materiais de dezenas de obras ativas pelo app diariamente e faça o seu lance.</p>
+                    <a href="https://chamala-app.web.app/loja.html" class="btn btn-dark" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2);">Acessar Painel Lojista</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -234,7 +271,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>O Fluxo de Contratação Perfeito</h2>
-                <p>Mapeamos cada passo da sua jornada para eliminar a frustração. Esqueça as dezenas de mensagens ignoradas no WhatsApp ou o medo de tomar um calote. Veja como o ChamaLá automatiza a confiança.</p>
+                <p>Mapeamos cada passo da sua jornada para eliminar a frustração. Esqueça as dezenas de mensagens ignoradas no WhatsApp ou o medo de tomar um calote.</p>
             </div>
 
             <div class="flow-grid">
@@ -245,7 +282,7 @@
                     </div>
                     <div class="step-content">
                         <h3>1. O Pedido e a Triagem Inteligente <span>Cliente</span></h3>
-                        <p>Você não precisa ligar para 5 pessoas diferentes. Abra o app, escolha a categoria e descreva o seu problema. Adicione fotos e vídeos para facilitar o entendimento. Nosso algoritmo notifica imediatamente os melhores profissionais num raio próximo à sua casa em Cuiabá.</p>
+                        <p>Você não precisa ligar para 5 pessoas diferentes. Abra o app, escolha a categoria e descreva o seu problema. Nosso algoritmo notifica imediatamente os melhores profissionais num raio próximo à sua casa em Cuiabá.</p>
                         <ul>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Respostas em minutos</li>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Fim das ligações frias</li>
@@ -259,7 +296,7 @@
                     </div>
                     <div class="step-content">
                         <h3>2. Recebimento de Lances e Avaliação <span>Cliente & Prestador</span></h3>
-                        <p>Os prestadores analisam o seu pedido e enviam orçamentos padronizados diretamente na plataforma. Você compara preços, lê as avaliações reais de outros clientes e checa os selos de verificação de cada profissional antes de tomar uma decisão.</p>
+                        <p>Os prestadores analisam o seu pedido e enviam orçamentos padronizados diretamente na plataforma. Você compara preços, lê as avaliações reais de outros clientes e checa os selos de verificação antes de decidir.</p>
                         <ul>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Transparência de Preço</li>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Histórico Imutável</li>
@@ -273,7 +310,7 @@
                     </div>
                     <div class="step-content">
                         <h3>3. Pagamento Seguro em Escrow <span>Sistema</span></h3>
-                        <p>Aqui está a mágica: ao escolher o prestador, você faz o pagamento no cartão de crédito ou Pix via app. <strong>O dinheiro não vai para o prestador ainda.</strong> Ele fica travado na Conta Garantia do ChamaLá. O profissional é notificado de que os fundos estão seguros e se desloca para o serviço com 100% de certeza de recebimento.</p>
+                        <p>Aqui está a mágica: ao escolher o prestador, você faz o pagamento no cartão de crédito ou Pix via app. <strong>O dinheiro não vai para o prestador ainda.</strong> Ele fica travado na Conta Garantia do ChamaLá. O profissional é notificado de que os fundos estão seguros e se desloca para o serviço.</p>
                         <ul>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Risco Zero de Calote</li>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Zero "Sumiço com Adiantamento"</li>
@@ -287,7 +324,7 @@
                     </div>
                     <div class="step-content">
                         <h3>4. Execução e Leilão de Materiais <span>Loja Parceira</span></h3>
-                        <p>O profissional inicia a obra. Se faltar material, ele gera uma lista no próprio app. Essa lista vai para o painel das nossas <strong>Lojas Parceiras</strong> em Cuiabá. A loja que der o menor lance fornece os produtos, e o material chega na sua obra sem você precisar sair de casa.</p>
+                        <p>O profissional inicia a obra. Se faltar material, ele gera uma lista no próprio app. Essa lista vai para o painel das nossas <strong>Lojas Parceiras</strong> em Cuiabá. A loja que der o menor lance fornece os produtos.</p>
                         <ul>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Material mais barato</li>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Agilidade na Entrega</li>
@@ -301,7 +338,7 @@
                     </div>
                     <div class="step-content">
                         <h3>5. Conclusão e Liberação do Pagamento <span>Cliente & Sistema</span></h3>
-                        <p>Serviço finalizado? O prestador marca como concluído no app e preenche o checklist de qualidade. Você inspeciona o trabalho e, estando tudo certo, dá o "Aceite". Somente neste momento o ChamaLá destrava o dinheiro e repassa para a conta bancária do profissional. Simples, rápido e definitivo.</p>
+                        <p>Serviço finalizado? O prestador marca como concluído no app e preenche o checklist de qualidade. Você inspeciona o trabalho e, estando tudo certo, dá o "Aceite". Somente neste momento o ChamaLá destrava o dinheiro e repassa para a conta bancária do profissional.</p>
                         <ul>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Controle total na sua mão</li>
                             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Qualidade Garantida</li>
@@ -325,7 +362,7 @@
                     <h3>O Sistema de Conta Garantia (Escrow) Explicado</h3>
                     <p>Muitos problemas em obras começam no dinheiro. O cliente paga 50% adiantado e o prestador some. Ou o prestador faz o serviço inteiro e o cliente não paga. <strong>Nós resolvemos isso travando o dinheiro no meio do caminho.</strong></p>
                     <p>Inspirado na lógica de contratos inteligentes e grandes corretoras, criamos uma conta de custódia. Quando você contrata via ChamaLá, seu pagamento fica protegido no nosso cofre digital. O prestador trabalha com tranquilidade sabendo que o dinheiro existe, e você dorme em paz sabendo que só pagará pelo que foi entregue e aprovado.</p>
-                    <a href="#cadastro" class="btn btn-primary mt-4">Contrate sem Medo</a>
+                    <a href="https://chamala-app.web.app/" class="btn btn-primary mt-4">Acessar App do Cliente</a>
                 </div>
 
                 <div class="security-list">
@@ -411,77 +448,6 @@
                         <li>Vidraceiro (Box de Banheiro, Cortina de Vidro, Espelhos)</li>
                     </ul>
                 </div>
-
-                <div class="cat-box">
-                    <h4><svg viewBox="0 0 24 24"><path d="M19.36 2.72L20.78 4.14L15.06 9.85C16.13 11.39 16.28 13.24 15.38 14.44L9.06 8.12C10.26 7.22 12.11 7.37 13.65 8.44L19.36 2.72M5.93 17.57C3.92 15.56 2.69 13.16 2.35 10.92L7.23 8.83L14.67 16.27L12.58 21.15C10.34 20.81 7.94 19.58 5.93 17.57Z"/></svg> Limpeza & Conservação</h4>
-                    <ul class="cat-list">
-                        <li>Diarista Padrão (Limpeza de Manutenção)</li>
-                        <li>Faxina Pesada (Vidros, Atrás de Móveis, Foco em Sujeira)</li>
-                        <li>Limpeza Pós-Obra (Remoção de Respingos e Pó Fino)</li>
-                        <li>Higienização Extrativa de Estofados, Sofás e Tapetes</li>
-                        <li>Limpeza e Tratamento Químico de Piscinas</li>
-                        <li>Jardineiro, Paisagista e Poda de Árvores</li>
-                    </ul>
-                </div>
-
-                <div class="cat-box">
-                    <h4><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg> Logística & Automotiva</h4>
-                    <ul class="cat-list">
-                        <li>Carreto para Pequenos Volumes e Eletrodomésticos</li>
-                        <li>Mudança Residencial Completa (Com Embalagem)</li>
-                        <li>Locação de Caçamba para Descarte de Entulho Ecológico</li>
-                        <li>Lavagem Ecológica de Veículos (Delivery na sua Garagem)</li>
-                        <li>Polimento Técnico e Cristalização de Pintura</li>
-                        <li>Martelinho de Ouro a Domicílio</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Cuiabá já confia no ChamaLá</h2>
-                <p>Veja o que os moradores e profissionais da nossa cidade estão falando sobre a experiência de usar uma plataforma segura e moderna.</p>
-            </div>
-
-            <div class="test-grid">
-                <div class="test-card">
-                    <div class="test-quote">"</div>
-                    <p class="test-text">Fiz a reforma do banheiro de casa e estava com muito medo de dar o adiantamento para o pedreiro. Com o sistema do ChamaLá, paguei no cartão, o dinheiro ficou seguro, e ele fez um trabalho impecável sabendo que ia receber. Recomendo demais!</p>
-                    <div class="test-author">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Juliana&backgroundColor=ffdfbf" alt="Cliente Juliana">
-                        <div>
-                            <h5>Juliana Mendes</h5>
-                            <span>Cliente • Bairro Goiabeiras</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="test-card">
-                    <div class="test-quote">"</div>
-                    <p class="test-text">Como eletricista, a pior parte do trabalho era cobrar cliente que ficava enrolando para pagar o final da obra. Hoje eu só aceito serviço pelo ChamaLá. Terminei a instalação, o cliente deu o OK no celular dele, o dinheiro já cai na minha conta. Mudou minha vida.</p>
-                    <div class="test-author">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Carlos&backgroundColor=c0aede" alt="Prestador Carlos">
-                        <div>
-                            <h5>Carlos Eletricista</h5>
-                            <span>Parceiro Nível 5 Estrelas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="test-card">
-                    <div class="test-quote">"</div>
-                    <p class="test-text">Minha loja de materiais aumentou o faturamento em 30% desde que entramos na plataforma. Todo dia recebemos listas de materiais das obras ativas na cidade. Damos o nosso melhor preço e a venda sai direto pelo painel, sem esforço de marketing.</p>
-                    <div class="test-author">
-                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Marcos&backgroundColor=b6e3f4" alt="Lojista Marcos">
-                        <div>
-                            <h5>Marcos Construções</h5>
-                            <span>Loja Parceira ChamaLá</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -549,44 +515,6 @@
         </div>
     </section>
 
-    <section id="cadastro" class="section-padding join-ecosystem">
-        <div class="container">
-            <div class="section-header">
-                <h2>Faça parte da revolução dos serviços em Mato Grosso</h2>
-                <p>Selecione o seu perfil e junte-se à plataforma que está mudando a forma como construímos, reformamos e mantemos nossos lares.</p>
-            </div>
-
-            <div class="join-grid">
-                <div class="join-card">
-                    <div class="join-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                    </div>
-                    <h3>Para a sua Casa ou Empresa</h3>
-                    <p>Precisa de um profissional agora? Crie sua conta gratuita, publique seu pedido e deixe que os melhores prestadores da região disputem para atender você com o menor preço e a maior qualidade garantida.</p>
-                    <a href="cliente.html" class="btn btn-primary">Acessar App do Cliente</a>
-                </div>
-
-                <div class="join-card">
-                    <div class="join-icon">
-                        <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
-                    </div>
-                    <h3>Para o Prestador Autônomo ou MEI</h3>
-                    <p>Diga adeus ao calote e às negociações intermináveis pelo WhatsApp. Tenha uma agenda cheia, receba seus pagamentos garantidos direto na conta bancária e construa uma reputação imbatível na cidade.</p>
-                    <a href="prestador.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.2); color: white;">Quero ser um Parceiro</a>
-                </div>
-
-                <div class="join-card">
-                    <div class="join-icon">
-                        <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
-                    </div>
-                    <h3>Para Lojas de Materiais de Construção</h3>
-                    <p>Transforme sua loja física em um fornecedor digital de alto volume. Receba listas de materiais de dezenas de obras ativas pelo app diariamente, faça o seu lance e aumente o seu faturamento corporativo.</p>
-                    <a href="loja.html" class="btn btn-dark" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">Cadastrar Minha Loja</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -598,9 +526,9 @@
                 <div class="footer-links">
                     <h4>Nossas Soluções</h4>
                     <ul>
-                        <li><a href="cliente.html">Aplicativo do Cliente</a></li>
-                        <li><a href="prestador.html">App do Profissional (ChamaLá Pro)</a></li>
-                        <li><a href="loja.html">Painel do Lojista Parceiro</a></li>
+                        <li><a href="https://chamala-app.web.app/">Aplicativo do Cliente</a></li>
+                        <li><a href="https://chamala-app.web.app/prestador.html">App do Profissional (ChamaLá Pro)</a></li>
+                        <li><a href="https://chamala-app.web.app/loja.html">Painel do Lojista Parceiro</a></li>
                         <li><a href="#seguranca">Como funciona o Pagamento Seguro</a></li>
                     </ul>
                 </div>
